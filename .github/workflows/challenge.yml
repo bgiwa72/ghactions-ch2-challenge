@@ -1,8 +1,6 @@
 name: Ch2 Challenge
 
-on: [push]
-
-workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   test:
