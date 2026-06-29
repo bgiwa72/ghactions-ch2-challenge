@@ -82,20 +82,17 @@ jobs:
       - name: Make binary executable
         run: chmod +x random-number-generator-linux
 
-      - name: Install Dependencies
-        run: bun install
-
-      - name: Run Commands
+      - name: Test Linux executable
         run: |
-          echo: "Testing with no seeds"
+          echo: "Testing Linux executable with no seeds"
           ./random-number-generator-linux
           echo ""
 
-          echo: "Testing with string seed"
+          echo: "Testing Linux executable with string seed"
           ./random-number-generator-linux "test-seed"
           echo ""
 
-          echo: "Testing with numeric seed"
+          echo: "Testing Linux executable with numeric seed"
           ./random-number-generator-linux 1906
           echo ""
 
