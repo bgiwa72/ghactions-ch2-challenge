@@ -21,15 +21,15 @@ jobs:
       - name: Run Commands
         run: |
           echo "Testing with no seed ..."
-          bun run random-number-generator.jobs
+          bun run random-number-generator.js
           echo ""
 
           echo "Testing with string seed ..."
-          bun run random-number-generator.jobs "test-seed"
+          bun run random-number-generator.js "test-seed"
           echo ""
 
           echo "Tesing with numeric seed"
-          bun run random-number-generator.jobs 1906
+          bun run random-number-generator.js 1906
           echo "Generated report:"
           cat report.txt
 
