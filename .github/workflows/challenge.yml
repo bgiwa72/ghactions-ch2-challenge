@@ -16,7 +16,7 @@ jobs:
           bun-version: latest
       
       - name: Install Dependencies
-        run: bun Install
+        run: bun install
 
       - name: Run Commands
         run: |
@@ -81,7 +81,7 @@ jobs:
         run: chmod +x random-number-generator-linux
 
       - name: Install Dependencies
-        run: bun Install
+        run: bun install
 
       - name: Run Commands
         run: |
