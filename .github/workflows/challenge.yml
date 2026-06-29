@@ -84,15 +84,15 @@ jobs:
 
       - name: Test Linux executable
         run: |
-          echo: "Testing Linux executable with no seeds"
+          echo "Testing Linux executable with no seeds"
           ./random-number-generator-linux
           echo ""
 
-          echo: "Testing Linux executable with string seed"
+          echo "Testing Linux executable with string seed"
           ./random-number-generator-linux "test-seed"
           echo ""
 
-          echo: "Testing Linux executable with numeric seed"
+          echo "Testing Linux executable with numeric seed"
           ./random-number-generator-linux 1906
           echo ""
 
