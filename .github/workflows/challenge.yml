@@ -55,7 +55,7 @@ jobs:
           bun-version: latest
       
       - name: Install Dependencies
-        run: bun Install
+        run: bun install
 
       - name: Create Executables
         run: bun run build
