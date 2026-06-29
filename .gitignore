@@ -141,3 +141,10 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Prevent project files from being tracked by git
+*.bun-build
+bun.lock
+report.txt
+package-lock.json
+random-number-generator-*
